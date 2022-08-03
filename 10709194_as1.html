@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 1</title>
+<meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0">
+<style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    li {
+      float: left;
+      border-right:1px solid #bbb;
+    }
+    li:last-child {
+      border-right: none;
+    }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+    .active {
+      background-color: rgb(17, 131, 32);
+    }
+    form{
+        margin: 0 auto;
+        color:white;
+        background-color: rgb(17, 131, 32);
+        width:500px;
+        /* Form outline */
+        padding: 1em;
+        border: 5px solid rgb(7, 104, 20);
+        border-radius: 1em;}
+    table{
+        margin: 0 auto;
+        color:white;
+        background-color: rgb(17, 131, 32);
+        width:500px;
+        /* Form outline */
+        padding: 1em;
+        border: 5px solid rgb(7, 104, 20);
+        border-radius: 1em;}
+    </style>
+</head>
+<body style="background-color: black;">
+<header style="background-color: rgb(7, 104, 20);">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnP8ObjAqFeb6fdss6AIRF2uRxqm8PNUmVQA&usqp=CAU" alt="Our logo" style="float:left;width:35px;"/>
+    <h1 style="position:relative; color:rgb(255, 255, 255);text-align:justify;font-style: monospaced font;">Welcome to HTML Assignment !!!</h1>
+</header>
+<nav>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#form1">Survey form</a></li>
+        <li><a href="#form2">Personal information form</a></li>
+        <li><a href="#course">Sample course</a></li>
+        <li style="float:right"><a href="#about">Naigation section is here!!!!</a></li>
+      </ul>
+</nav>
+<section id="home">
+   <h2 style="color:white;">Building Forms with Shree Sandhiya (10709194) :-</h2>
+   <p style="color:wheat;"> Forms are an essential part of the Internet, as they provide a way for websites to capture information from users and to process requests, and they offer controls for nearly every imaginable use of an application. Through controls or fields, forms can request a small amount of information—often a search query or a username and password—or a large amount of information—perhaps shipping and billing information or an entire job application.</p>
+   <p style="color:wheat;">We need to know how to build forms in order to acquire user input. In this lesson we’ll discuss how to use HTML to mark up a form, which elements to use to capture different types of data, and how to style forms with CSS. We won’t get too deep into how information from a form is processed and handled on the back end of a website. Form processing is a deeper topic, outside the realm of this book; for now we’ll stick to the creation and styling of forms.</p>
+   <h3 style="color:white;">Our question</h2>
+    <p style="color:wheat;">1.Create a Basic html page with using all below<br>
+2.Use all markup semantic tags<br> 3.Simple survey form<br>
+       4.Create table store some records (ex. Students, Employees)</p>
+       
+    <p style="color:wheat;">To add a form to a page, we’ll use the form element. The form element identifies where on the page control elements will appear. Additionally, the form element will wrap all of the elements included within the form, much like a div  element.  </p>
+   <p style="color:wheat;"> Structuring the form using HTML Tables . We can take the help of HTML tables to structure our forms. The table tag not only helps in creating desired tables but can also be used to structure our content such as forms. The below steps show how to use HTML tables to structure forms.
+    </p>
+    
+    <h2 style="color:white;">Initializing a Form</h2>
+    <h4 style="color:white;">List have been used here!!!</h2>
+ <ol style="color:wheat;">
+    <li>Create an HTML table using the table element.</li><br>
+    <li> Now add the form element within this table.</li><br>
+    <li>Next, we will create form fields.</li><br>
+    <li>We add the required form fields to the form using the tr element that is used to add rows to a table.</li><br>
+    <li> We use the td element to add labels and fields for separate columns.</li><br>
+    <li> We can add as many fields as required to our form</li><br> </ol>   
+</section>
+<br>
+<hr>
+<br>
+<section id="form1">
+        <h2  style="color:white;" >Welcome To Survey Form </h2>
+        <h4 style="color:white;">This form is developed using tables from HTML.</h4>
+
+        <p style="color:wheat;">Creating an HTML form is an important aspect when creating a website. Forms are a method of interacting with the users of the website. Thus it becomes necessary that the forms must be properly aligned and attractive when implemented on a website.
+             The process of simply adding an HTML form to a webpage is as follows.</p>
+    
+        <table>
+            <form>
+                <tr>
+                    <td>
+                        <label for="name">
+                            Name
+                        </label>
+                    </td>
+                    <td><input type="text" id="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">
+                            Email
+                        </label>
+                    </td>
+                    <td><input type="email" id="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Phone">
+                        Phone
+                        </label>
+                    </td>
+                    <td><input type="number" id="Phone" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Acount type">
+                        Acount type
+                        </label>
+                    </td>
+                    <td><select id="type acc" >
+                        <option value="Individual">Individual</option>
+                        <option value="Small Team">Small Team</option>
+                        <option value="Organisation"> Organisation</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Account number">
+                        Account no
+                        </label>
+                    </td>
+                    <td><input type="number" id="Account number" />
+                    </td>
+                </tr>
+                    <tr>
+                        <td><label for="Course taken">
+                            Course Completed:
+                            </label>
+                        </td>
+                        <td><label for="Course taken"> Give your score: 
+                        </label>
+                        </td>
+                </tr>
+                    <tr><td> 
+                        <input type="checkbox" id="html" name="language" value="HTML">
+                        <label for="html">HTML</label></td>
+                        <td><input type="range" id="points" name="points" min="0" max="10"></td>
+                    </tr>
+                    <tr><td> <input type="checkbox" id="css" name="language" value="CSS">
+                        <label for="css">CSS</label></td>
+                        <td><input type="range" id="points" name="points" min="0" max="10"></td>
+                    </tr>
+                    <tr><td> <input type="checkbox" id="java" name="language" value="Java">
+                        <label for="java">java</label></td>
+                        <td><input type="range" id="points" name="points" min="0" max="10"></td>
+                    </tr>
+                    <tr> <td><input type="checkbox" id="Python" name="language" value="Python">
+                        <label for="Python">Python</label></td>
+                        <td><input type="range" id="points" name="points" min="0" max="10"></td>
+                    </tr>
+                    <tr> <td><input type="checkbox" id="C++" name="language" value="C++">
+                        <label for="C++">C++</label></td>
+                        <td><input type="range" id="points" name="points" min="0" max="10"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Choose">Will you suggest our course ?</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="YES">YES</label>
+                            <input type="radio" id="YES"></td>
+                        <!--<td><label for="Maybe"> Maybe</label>
+                            <input type="checkbox" id="Maybe" ></td>-->
+                        <td><label for="No"> NO</label>
+                            <input type="radio" id="No"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Choose">Give us your suggestions here</label></td>
+                        <td style="text-align: center;"><label for="Choose">Add your attachments</label></td>
+                    </tr>
+                    <tr>
+                        <colgroup>
+                            <col span="2" style="background-color:rgb(36, 129, 75)">
+                            <col style="background-color:rgb(61, 124, 61)">
+                          </colgroup>
+                        <td><textarea rows="2" cols="25" ></textarea></td>
+                        <td><input type="file" name="upload" id="fileselect"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Password ">Password
+                            </label>
+                        </td>
+                        <td><input type="password" id="pwd"/>
+                        </td>
+                    </tr>
+                <tr><td><label for="nono">    </label></td>
+                    <td><label for="nono">   </label></td>
+                </tr>
+                    <tr style="text-align: center;"><td><input type="submit" value="Submit"></td>
+                    <td><input type="reset" value="Reset"></td></tr>
+            </form>
+        </table>
+</section>
+
+<br><br><hr>
+
+<section id="form2"> 
+    <h2  style="color:white;" >Welcome To Personal information Form </h2>
+    <h4 style="color:white;">This form is developed using non semantics to show difference.</h4>
+    <p style="color:wheat;">With this code, we have simply created a form within the body of the page. In the output, it can be seen that the form fields and labels are all in one line which does not look good.
+         Even if we use the tag to separate them into different lines, it would still not be properly aligned.</p>
+    <form >
+        Username:<br>
+        <input type="text" name="username">
+        <br>
+        Password:<br>
+        <input type="password" name="password">
+        <br>
+        SELECT GENDER
+        <br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <br>
+        <label for="country">Profession:</label>
+        <select name="country" id="country">
+            <option value="Under graduate">Under graduate</option>
+            <option value="Post graduate">Post graduate</option>
+            <option value="Working individual"> Working individual</option>
+        </select>
+        <br>
+        <b>SELECT Languages known:</b>
+        <br>
+        <input type="checkbox" name="subject" id="Python">
+        <label for="Python">Python</label>
+        <input type="checkbox" name="subject" id="C++">
+        <label for="C++">C++</label>
+        <input type="checkbox" name="subject" id="Java">
+        <label for="Java">Java</label>
+        <input type="checkbox" name="subject" id="Html">
+        <label for="Html">Html</label>
+        <input type="checkbox" name="subject" id="Css">
+        <label for="Css">Css</label>
+        <br><br>
+        <label for="fileselect"> Upload certificates:</label>
+        <input type="file" name="upload" id="fileselect">
+        <br>
+        <label for="Description">Description about other activities:</label>
+        <textarea rows="5" cols="50" name="Description"id="Description"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    
+      <p style="color:wheat;">As it is seen in the output that the previous form fields are 
+        appropriately added to new rows and are also properly aligned with the help of HTML tables.
+         It can also be seen that all the input fields are of the same width and length.
+         Thus there is no use in using the CSS to align the form fields.Much differing to personal information form </p>
+      <p style="color:wheat;"></p>
+</section>
+
+<hr>
+
+<section id=course>
+    <h2 style="color:rgb(255, 255, 255);">Sample course</h2>
+    <h4 style="color:rgb(255, 255, 255);">Table with records</h2>
+<p>This section contains some table by which we can access quick links and record of date to complete the work </p>
+<table id="sample">
+    <tr>
+      <th>S.No</th>
+      <th>Date</th>
+      <th>Assignment</th>
+      <th>Link</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1.7.2022</td>
+      <td>HTML Fundamental</td>
+      <td><a href="https://app.pluralsight.com/library/courses/html-fundamentals/description">Pluralsight</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2.7.2022</td>
+        <td>HTML table</td>
+        <td><a href="https://www.w3schools.com/html/html_table_styling.asp">W3 table</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>4.7.2022</td>
+        <td>HTML Forms</td>
+        <td><a href="https://www.w3schools.com/html/html_form_input_types.asp">W3 form</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>6.7.2022</td>
+        <td>HTML form by table</td>
+        <td><a href="https://www.geeksforgeeks.org/how-to-use-tables-to-structure-forms/">Geeks</a></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1.7.2022</td>
+        <td>HTML CSS + JS</td>
+        <td><a href="https://www.w3schools.com/cssref/pr_dim_max-width.asp">W3 advanced</a></td>
+    </tr>
+  </table>
+</section>
+
+<hr>
+
+<footer id="about" style="color:wheat;">
+    <p style="color:wheat;">This work is done as HTML Assignment given on Monday 11.7.2022 to be submitted on 12.07.2022 Tuesday <br>
+        <cite style="color:white;">Ps.No 10709194 <br> A.Shree Sandhiya</cite><br>
+    <a href="shreesandhiya.a@lntinfotech.com">shreesandhiya.a@lntinfotech.com</a></p>
+    <blockquote style="text-align: center;">All is well that ends well !!! &#128516;</blockquote>
+  </footer>
+
+</body>
+</html>
