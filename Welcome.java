@@ -1,3 +1,5 @@
+  public class Welcome {
+  public static void main(String[] args) {
     // Get User Input
     Scanner sc = new Scanner(System.in);
     System.out.println("What is your name?");
@@ -15,3 +17,6 @@
             break;
         } // End of conditional
     } // End of while loop
+     System.out.println("Happy Brthday Shree - With love dhiya");
+  }
+  }
